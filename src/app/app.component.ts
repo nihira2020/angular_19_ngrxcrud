@@ -4,11 +4,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { RouterOutlet } from '@angular/router';
 import { ChildComponent } from './component/child/child.component';
+import { TempchildComponent } from './component/tempchild/tempchild.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, MatFormFieldModule, MatCardModule, MatInputModule,
-    ChildComponent
+    ChildComponent,TempchildComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
