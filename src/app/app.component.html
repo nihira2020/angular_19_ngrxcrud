@@ -34,6 +34,19 @@
         <h2>Signal Model</h2>
     </mat-card-header>
     <mat-card-content>
-        
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="username">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Fisrt Name</mat-label>
+            <input matInput [(ngModel)]="userobj().firstname">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input matInput [(ngModel)]="userobj().lastname">
+        </mat-form-field>
+       <h2>The user name is : {{username()}}</h2>
+       <h2>{{userobj() | json}}</h2>
     </mat-card-content>
 </mat-card>
